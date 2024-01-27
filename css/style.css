@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'Flame' ;
+    src: url(../fuentes/Flame-Regular.woff) format('woff') ;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+h3 { font-family: 'Flame', system-ui, -apple-system;}
+  
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: fixed;
+    width: 100%;
+    background-color: #f5ebdc;
+    box-shadow: 0px 1px 10px #5023145b;
+    z-index: 100
+    
+    ;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar li a:not(.pediYa){
+    text-decoration: none;
+    color: #502314;
+    font-size: 14px;
+    font:bolder;
+}
+
+.pediYa{
+    background-color: red;
+    color:#f5ebdc;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.pediYa:hover {
+    outline: 1px red solid;
+    background-color: #f5ebdc;
+    color: red;
+}
+
+/* main principal */
+
+#main {
+    background-color: #f5ebdc;
+}
+
+
+/* Banner */
+.banner_video video {
+    width: 100%;   
+ }
+
+.banner_video {
+    padding: 64px 0px;
+}
+
+/* Titulo de menu */
+.titleMenu {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color:#502314;    
+}
+
+.card-container{
+    padding: 50px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 20px;
+    text-decoration:none;
+}
+
+.cardMenu {
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f5ebdc;
+    text-align:center;  
+    transition:all .1s ease-in-out; 
+    cursor: pointer;  
+}
+
+.cardMenu:hover{   
+    box-shadow: 0px 1px 10px #50231418;
+    background-color:  #fdfaf557;
+}
+  
+
+.cardMenu a div img {
+    width: 100%;
+    height: 50%;
+    object-position: center;  
+}
+   
+.cardMenu a p {    
+    font-size: 16px;
+    font-weight: bold;
+    color: #502314;
+    margin: 60px 10px 0px 10px;  
+}
+
+/* promos */
+.titlePromos {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #502314;  
+}
+
+.card-container-promos {
+    padding: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardPromos {
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #502314;
+    box-shadow: 0px 1px 10px #5023145b;   
+}
+
+.cardPromos a h4 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5ebdc;
+    margin: 60px 10px 0px 10px;   
+}
+
+.cardPromos a p {
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #f5ebdc;
+    margin-top: 20px;   
+}
+    
+.cardPromos a img {
+    width: 100%;
+    height: 50%;
+    object-position: center;
+}
+
+#cardnuggets{
+    background-color: #ff8824;
+}
+
+
+/* Testimonios */
+
+.titleTestimonios {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #502314;
+    padding: 50px;
+}
+
+.card-container-promos{  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;   
+}
+
+.testimoniosCard{
+    min-height: 250px;
+    width: 400px;
+    border-radius: 10px;
+    background: #fdfaf557;
+    box-shadow: 0px 1px 10px #5023145b;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    padding: 10px 20px; 
+}
+
+.testimoniosCard img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;        
+}
+
+/* footer */
+.footerStyle{
+    background-color: #502314;
+    padding: 50px 0;   
+}
+
+.redesSociales{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;  
+    text-decoration: none;
+}
+
+.politicasP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f5ebdc;
+    padding: 50px;
+    gap: 40px;  
+}
+
+.copyright{
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: #f5ebdc;
+}
+
+
+
+
+/* PAGINA MENU */
+
+/* main de pagina */
+#main_menu{
+    background-color: #f5ebdc;
+    padding: 100px 0;
+}
+
+/* Sub Nav de Menu */
+.navbar_menu{
+
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    justify-content: center;
+    padding: 100px 0px 50px 0;   
+}
+
+.navbar_menu li a {
+
+    text-decoration: none;
+    color: #502314;
+    font-size: 16px;
+    font:bolder;
+}
+
+/* titulos de productos */
+
+.titleProductos{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #502314;
+    padding: 100px 0px 0px 0px;
+}
+
+.titleProductos_b{
+    padding: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: baseline;
+    gap: 20px;
+}
+
+/* card´s */
+
+.cardMenub {
+    height: 400px;
+    width: 600px; 
+}
+
+.cardMenub a img {
+    width: 100%;
+    height: 50%;
+    object-position: center;
+    transition:all .1s ease-in-out; 
+
+}
+.cardMenub:hover a img{
+    transform: scale(1.1);
+}
+
+.cardMenub a {
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cardMenub a h4 {
+       
+    font-size: 18px;
+    font-weight: bold;
+    color:#502314;
+    margin: 0px 30px 0px 30px;   
+}
+
+.cardMenub a p {
+    text-align: center;
+    text-decoration:none;
+    font-size: 18px;
+    color:#502314;
+    margin-top: 20px;
+    font: bolder;
+}
+
+
+
+
+
+
+
+/* PAGINA PROMOS */
+
+/* banner */
+
+.bannerPromos img{
+    width: 100%;
+    padding: 64px 0px 0px 0px;
+}
+
+/* cards promos */
+.cardContainerPromos {
+    padding: 50px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 50px;
+}
+
+.cardPromos_b {
+    margin: 50px 0px 50px 0px;
+    height: 400px;
+    width: 600px;
+}
+
+.cardPromos_b a img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+
+/* PAGINA NOSOTROS */
+
+.titleMenuNosotros{
+    padding: 100px 0px 0px 0px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color:#502314; 
+}
+
+.nosotrosb p {
+    padding: 50px;
+    text-align: center;   
+}
+
+.fotos_de_nosotros_container{
+    padding: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.fotos_de_nosotros img{
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* PAGINA CONTACTOS */
+
+.section_contacto{
+    padding: 100px 0px 50px 0px;
+    text-align: center;      
+}
+
+.caja_contacto{
+    padding: 100px;
+}
+
+.datos_contacto{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px #5023145b;
+}
+
+.datos_contacto form div{
+    margin-top: 3%;
+    display: flex;
+    justify-content:center;
+    align-items: center;   
+}
+
+.datos_contacto form div input{
+    width: 280px;   
+}
+
+.datos_contacto form div textarea{
+    width: 280px;
+}
+
+.botones_datos{
+    width: 200px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botones_datos input{
+    background-color: #f5ebdc;
+   border-style: none;
+}
+
+.botones_datos input:hover{
+    background-color: #502314;
+    color: #f5ebdc;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.mapa_google
+{
+    padding: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;   
+}
